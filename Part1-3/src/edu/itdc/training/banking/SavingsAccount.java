@@ -8,6 +8,7 @@ public class SavingsAccount extends BankAccount{
 	}
 	
 	public SavingsAccount(String accountNo, String accountName, double initBalance, double interestRate){
-		
+		super(accountNo, accountName, initBalance);
+		this.interestRate = interestRate;
 	}
 }
