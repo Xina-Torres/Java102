@@ -3,7 +3,7 @@ package edu.itdc.training.banking;
 public class BankAccount {
 	private String accountNo;
 	private String accountName;
-	private double balance;
+	protected double balance;
 	public BankAccount(){}
 	public BankAccount(String accountNo, String accountName){
 		
