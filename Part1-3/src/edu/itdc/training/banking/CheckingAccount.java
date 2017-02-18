@@ -21,5 +21,10 @@ public class CheckingAccount extends BankAccount{
 			return false;
 		}
 	}
+	
+	public String toString(){
+		return "[ " + this.getAccountNo() + " , " + this.getAccountName() + " , " + this.getBalance() + " , " + 
+				overdraftProtection + " ]";
+	}
 }
 	
