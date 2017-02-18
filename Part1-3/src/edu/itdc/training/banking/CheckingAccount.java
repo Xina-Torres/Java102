@@ -7,7 +7,8 @@ public class CheckingAccount extends BankAccount{
 	}
 	
 	public CheckingAccount(String accountNo, String accountName, double initBalance, double overdraftProtection){
-		
+		super(accountNo, accountName, initBalance);
+		this.overdraftProtection = overdraftProtection;
 	}
 	
 	public boolean withdraw(double amount){return false;}
