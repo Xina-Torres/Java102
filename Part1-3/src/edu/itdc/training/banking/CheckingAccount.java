@@ -10,7 +10,16 @@ public class CheckingAccount extends BankAccount{
 		super(accountNo, accountName, initBalance);
 		this.overdraftProtection = overdraftProtection;
 	}
-	
-	public boolean withdraw(double amount){return false;}
+	// balance - amount
+	// 
+	public boolean withdraw(double amount){
+		//;
+		if(super.balance >= amount || super.balance -amount <= overdraftProtection){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 }
 	
