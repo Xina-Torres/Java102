@@ -11,4 +11,9 @@ public class SavingsAccount extends BankAccount{
 		super(accountNo, accountName, initBalance);
 		this.interestRate = interestRate;
 	}
+	
+	public String toString(){
+		return "[ " + this.getAccountNo() + " , " + this.getAccountName() + " , " + this.getBalance() + " , " + 
+				interestRate + " ]";
+	}
 }
